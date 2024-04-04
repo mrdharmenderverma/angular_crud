@@ -28,40 +28,28 @@
   },
   "employees": [
     {
-      "id": "2d4c",
-      "firstName": "Dharmender",
-      "lastName": "Verma",
-      "email": "dharmender@gmail.com",
-      "dob": "1195-07-24T18:06:32.000Z",
-      "gender": "male",
-      "education": "Post Graduate",
-      "company": "Infinity Soft System",
-      "experience": 2,
-      "package": 6
-    },
-    {
-      "id": "8d42",
       "firstName": "Rahul",
-      "lastName": "Verma",
-      "email": "rahulverma@gmail.com",
-      "dob": "2000-12-11T18:30:00.000Z",
-      "gender": "male",
-      "education": "Diploma",
-      "company": "Google",
-      "experience": 4,
-      "package": 8
-    },
-    {
-      "id": "1a96",
-      "firstName": "Sujal ",
-      "lastName": "Saxena",
-      "email": "sujal@gmail.com",
-      "dob": "1996-06-09T18:30:00.000Z",
+      "lastName": "Sharmaaa",
+      "email": "dharmenderkumar223@gmail.com",
+      "dob": "1995-07-24T18:30:00.000Z",
       "gender": "male",
       "education": "Graduate",
-      "company": "Infinity soft system",
+      "company": "Infinity Soft Systems",
+      "experience": 2,
+      "package": 4,
+      "id": "c884"
+    },
+    {
+      "id": "3bb7",
+      "firstName": "Dharmender",
+      "lastName": "Verma",
+      "email": "imdharmenderverma@gmail.com",
+      "dob": "1996-07-24T18:30:00.000Z",
+      "gender": "male",
+      "education": "Post Graduate",
+      "company": "Google",
       "experience": 3,
-      "package": 6
+      "package": 12
     }
   ]
 }
