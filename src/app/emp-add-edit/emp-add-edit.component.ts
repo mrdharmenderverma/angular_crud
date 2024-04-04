@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { EmployeeService } from '../services/employee.service';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-emp-add-edit',
@@ -8,7 +10,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class EmpAddEditComponent implements OnInit {
 
-  constructor(private __fb: FormBuilder) { 
+  constructor(private __fb: FormBuilder, private __empService: EmployeeService, private __dialogRef: MatDialogRef<EmpAddEditComponent>) { 
     this.empForm = this.__fb.group({
       firstName: '',
       lastName: '',
@@ -40,7 +42,19 @@ export class EmpAddEditComponent implements OnInit {
 
   onFormSubmit(){
     if (this.empForm.valid) {
-      console.log(this.empForm.value);
+      // console.log(this.empForm.value);
+      this.__empService.addEmployee(this.empForm.value).subscribe({
+        //define an object
+        next: (val: any) => {
+          //if success get the result here
+          alert("Employee Added successfully");
+          this.__dialogRef.close();
+        },
+        //if any error here
+        error: (err: any) => {
+          console.error(err);
+        }
+      });
     }
   }
 }
